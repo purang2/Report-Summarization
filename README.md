@@ -8,10 +8,11 @@ Summarize Long Document with Pretrained sequence-to-sequence LM with long-range 
 
 
 ```python
-# Use a pipeline as a high-level helper
 
-from transformers import pipeline
 MODEL_CARD = "UNIST-Eunchan/Pegasus-x-base-govreport-12288-1024-numepoch-10"
+
+# Use a pipeline as a high-level helper
+from transformers import pipeline
 pipe = pipeline("text2text-generation", model=MODEL_CARD)
 
 # Load model directly
