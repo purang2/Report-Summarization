@@ -28,6 +28,8 @@ model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CARD)
 
 평균 9000 토큰이 조금 안 되는 분량, 10000토큰 이상이 다수 포함된 U.S. Government Reoprt 문서 데이터를 원문, 500~1000 토큰 정도의 요약 문서를 요약 타깃으로 쌍으로 구성된 17,517개를 사용
 
+This model-weight is based on abstractive summarization task-specific model (PEGASUS-X) and fine-tuned by using one NVIDIA RTX A6000 about 30 hours.
+
 ### INPUT 
 
 
