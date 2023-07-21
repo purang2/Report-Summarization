@@ -25,10 +25,14 @@ model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CARD)
 
 ## Trained Dataset 
 
+
+평균 9000 토큰이 조금 안 되는 분량, 10000토큰 이상이 다수 포함된 U.S. Government Reoprt 문서 데이터를 원문, 500~1000 토큰 정도의 요약 문서를 요약 타깃으로 쌍으로 구성된 17,517개를 사용
+
 ### INPUT 
 
 
-Google Docs 기준 8 pages 정도 분량을 입력으로 받는다.
+Google Docs 기준 8 pages 정도 분량을 입력으로 받습니다.
+
 책이나 A4지 기준으로 한 페이지에 500 words 정도 됩니다.
 
 
