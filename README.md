@@ -4,7 +4,21 @@ Summarize Long Document with Pretrained sequence-to-sequence LM with long-range 
 
 
 
+## How to use Model
 
+```(python)
+# Use a pipeline as a high-level helper
+
+from transformers import pipeline
+MODEL_CARD = "UNIST-Eunchan/Pegasus-x-base-govreport-12288-1024-numepoch-10"
+pipe = pipeline("text2text-generation", model=MODEL_CARD)
+
+# Load model directly
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+
+tokenizer = AutoTokenizer.from_pretrained(MODEL_CARD)
+model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_CARD)
+```
 
 
 ## Trained Dataset 
