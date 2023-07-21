@@ -6,7 +6,8 @@ Summarize Long Document with Pretrained sequence-to-sequence LM with long-range 
 
 ## How to use Model
 
-```(python)
+
+```python
 # Use a pipeline as a high-level helper
 
 from transformers import pipeline
